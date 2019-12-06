@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>slideDownRefresh</title>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+    <style type="text/css">
+    	.public-title {
+		    position: relative;
+		    height: .9rem;
+		    width: 100%;
+		    text-align: center;
+		    top: 0;
+		    background-color: #eee;
+		    margin-bottom: .1rem;
+		}
+		.public-title .arrow-back {
+		    position: absolute;
+		    display: inline-block;
+		    border-top: 2px solid;
+		    border-right: 2px solid;
+		    width: .3rem;
+		    height: 0.3rem;
+		    border-color: #31c8b6;
+		    transform: rotate(-135deg);
+		    left: .38rem;
+		    bottom: .3rem;
+		}
+		.public-title .title-name {
+		    display: block;
+		    line-height: .9rem;
+		    font-size: .36rem;
+		}
+		#elasticbox{
+			height: calc(100% - 1rem);
+			width: 100%;
+			overflow: auto;
+		}
+		#incon{
+			transform: translate(0px, 0px);
+		}
+		#incon li{
+			height: 1rem;
+			line-height: 1rem;
+			width: 100%;
+		}
+		#incon li:nth-child(odd){
+			background-color: #ddd;
+		}
+		#incon li:nth-child(even){
+			background-color: #eee;
+		}
+		#bottomtab{
+			position: absolute;
+			background: transparent!important;
+			height: 0!important;
+		}
+		#bottomtab span{
+			margin-left: .2rem;
+			line-height: 1rem;
+		}
+		#bottomtab i{
+			display: block;
+		    width: 20px;
+		    height: 20px;
+		    background-image: url(./reload.png);
+		    background-size: 100% 100%;
+		    background-repeat: no-repeat;
+		    margin-left: 40%;
+		    margin-top: 15px;
+		    float: left;
+		}
+    </style>
+</head>
+<body>
+	<div class="public-title">
+	    <span class="arrow-back"></span>
+	    <span class="title-name">Lee-Demo</span>
+	</div>
+	<div id="elasticbox">
+		<ul id="incon">
+			<li><span class="single">test1</span></li>
+			<li><span class="single">test2</span></li>
+			<li><span class="single">test3</span></li>
+			<li><span class="single">test4</span></li>
+			<li><span class="single">test5</span></li>
+			<li><span class="single">test6</span></li>
+			<li><span class="single">test7</span></li>
+			<li><span class="single">test8</span></li>
+			<li><span class="single">test9</span></li>
+			<li><span class="single">test10</span></li>
+			<li><span class="single">test11</span></li>
+			<li><span class="single">test12</span></li>
+			<li><span class="single">test13</span></li>
+			<li><span class="single">test14</span></li>
+			<li><span class="single">test15</span></li>
+		</ul>
+	</div>
+</body>
+<!-- <script type="text/javascript" src="./zepto.min.js"></script> -->
+<script type="text/javascript" src="./slideDownRefresh.js"></script>
+<script type="text/javascript">
+	//移动端视图调整
+	(function(doc, win) {
+		var docEl = doc.documentElement,
+			resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			recalc = function() {
+				var clientWidth = docEl.clientWidth;
+				if (!clientWidth) return;
+				docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+			};
+
+		if (!doc.addEventListener) return;
+		win.addEventListener(resizeEvt, recalc, false);
+		doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window); 
+
+
+	//1.未内容的父级容器绑定事件
+	//2.设置触发更新的事件
+	
+
+	//如果无法下滑尝试修改pc端模拟的手机型号刷新下
+	window.onload = function(){
+		var dom = document.getElementById('elasticbox');
+		//1.父级dom绑定，设置速度为5
+		Elastic(dom,5);
+	}
+	// $(function(){
+	// 	var dom = document.getElementById('elasticbox');
+	// 	//1.父级dom绑定，设置速度为5
+	// 	Elastic(dom,5);
+	// })
+	//2.定义触发事件
+	function refresh(){
+		console.log('f5')
+	}
+</script>
+</html>

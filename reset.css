@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* use YUI.reset */
+html{-webkit-text-size-adjust:none;height:100%;overflow-x:hidden;}
+body{width:100%;height: 100%;font-family: "\82F9\65B9", "苹方","Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;font-size:.28rem;color:#555; background:#fff;box-sizing: content-box;overflow-x:hidden;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,a,span,i,b,button{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img,input{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+li{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+i{font-style:normal;}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+legend{color:#000}
+a{text-decoration:none; font-family: "\82F9\65B9","苹方","Microsoft YaHei", 微软雅黑, "MicrosoftJhengHei", 华文细黑, STHeiti, MingLiu;;}
+a:hover{text-decoration: none;}
+*{outline:none;}textarea{resize:none}
+button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {border:none ;padding:0;}
+.cl{clear:both}
+.clear{clear:both; font-size:0; line-height:0; height:0;}
+.clearfix{zoom:1;}
+.clearfix:after{content:'.';display:block;height:0;visibility:hidden;clear:both; font-size:0;}
+*html .clear{height: 1%;}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #c4c4c4!important; opacity:1; 
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #c4c4c4!important;opacity:1;
+}
+
+input:-ms-input-placeholder{
+    color: #c4c4c4!important;opacity:1;
+}
+
+input::-webkit-input-placeholder{
+    color: #c4c4c4!important;opacity:1;
+}
+input[type="text"]:disabled,
+input[disabled],input:disabled{
+  /* color: #999;  
+    -webkit-text-fill-color:#999;  */
+    -webkit-opacity:1;  
+    opacity: 1;  
+    background-color: #fff;
+}
+-webkit-input[type="text" i]:disabled{
+  background-color: #fff;
+}
+/* 间距 */
+.mt0{margin-top: .0!important;}
+.mt10{margin-top: .1rem!important;}
+.mt25{margin-top: .25rem!important;}
+.mt30{margin-top: .3rem!important;}
+/*按钮间边距*/
+.mt32{margin-top: .32rem!important;}
+/*按钮距内容边距1*/
+.mt65{margin-top: .65rem!important;}
+/*按钮距内容边距2*/
+.mt90{margin-top: .90rem!important;}
+
+.mt150{margin-top: 1.5rem!important;}
+.mt160{margin-top: 1.6rem!important;}
+
+.mb25{margin-bottom: .25rem!important;}
+.mlr32{margin-left: .32rem;margin-right: .32rem;}
+
+.pt05{padding-top: .05rem;}
+.pt25{padding-top: .25rem!important;}
+/*输入框有图标调整*/
+.pr35{padding-right: .35rem;}
+/*输入框有图标调整*/
+.pr60{padding-right: .6rem;}
+/*输入框有图标调整*/
+.pr67{padding-right: .67rem!important;}
+.pr120{padding-right: 1.2rem;}
+.pb100{padding-bottom: 1rem;}
+.pl0{padding-left: .0rem!important;}
+.pl20{padding-left: .2rem;}
+.plr32{padding-left: .32rem;padding-right: .32rem;}
+/*对齐方式*/
+.float-l{float: left;}
+.float-r{float: right ;}
+.va-top{vertical-align: top !important;}
+.va-mid{vertical-align: middle!important;}
+.va-sub{vertical-align: sub!important;}
+.tal{text-align: left !important;}
+.tac{text-align: center!important;}
+.tar{text-align: right !important;}
+.dmiddle{display: inline-block;vertical-align: middle;*display: inline;*zoom: 1;}
+.va-top{vertical-align: top !important;}
+/* 常用背景颜色 */
+.bg-white {background-color: #fff}
+.bg-gray{background-color: #f1f1f1}
+.bg-black{background-color: #414245;}
+.bg-green{background-color: #31c8b6;}
+
+/* 颜色 */
+.color-green{color: #31c8b6;}
+.color-gray{color: #c4c4c4!important;}
+.color-999{color: #999!important;}
+.color-555{color: #555!important;;}
+.color-aaa{color: #aaa!important;}
+.color-c4c4c4{color: #c4c4c4!important;}
+/* 加粗 */
+.wb-fw-blod{font-weight: bold;}
+
+/* 行高 */
+
+
+/* 段落 */
+
+
+/* 文字对齐 */
+
+
+/* a标签的样式 */
+
+
+/* 字体 */
+.wb-fz-20{ font-size: .2rem;}
+.wb-fz-22{ font-size: .22rem;}
+.wb-fz-24{ font-size: .24rem!important;}
+.wb-fz-26{ font-size: .26rem;}
+.wb-fz-28{ font-size: .28rem!important;;}
+.wb-fz-30{ font-size: .3rem!important;;}
+.wb-fz-32{ font-size: .32rem!important;}
+.wb-fz-34{ font-size: .34rem;}
+.wb-fz-36{ font-size: .36rem;}
+.wb-fz-48{ font-size: .48rem;}
+/*.wb-fm-english{font-family: "San Francisco","Arial","Helvetica"!important;}*/
+
+
+
+/* 定位 */
+.wb-absolute{position: absolute;}
+.wb-fixed{position: fixed;}
+.wb-relative{position: relative;}
+/* 显示方式 */
+.wb-block{display: block;}
+.wb-inblock{display: inline-block;}
+.wb-hide{display: none;}
+.wb-row{width:100%;display: flex;display:-webkit-flex;flex-direction:row;-webkit-flex-direction:row;justify-content:space-between;-webkit-justify-content:space-between;line-height: .58rem;}
+/* 圆角 */
+.wb-radus-10{border-radius: .1rem;}
+/* 边框 */
+.wb-bborder{border-bottom: 1px solid  #e5e5e5!important;}
+
+
+
+/* 字体图标 */
+
+
+
+
+
+/*.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}*/
+
+.icon-addr:before { content: "\e9ff"; }
+
+.icon-chevron-right:before { content: "\555"; }
+
+.icon-add:before { content: "\e6df"; }
+
+.icon-prompt_fill:before { content: "\e71b"; }
+
+.icon-animation-ok:before { content: "\e637"; }
+
+.icon-chevron-down:before { content: "\e60e"; }
+
+.icon-check-box-ok:before { content: "\e610"; }
+
+.icon-check-box:before { content: "\e611"; }
+
+.icon-chevron-up:before { content: "\e60f"; }
+
+.icon-info-sign:before { content: "\e612"; }
+
+.icon-radio-success:before { content: "\e615"; }
+
+.icon-wb-load:before { content: "\e617"; }
+
+
+
