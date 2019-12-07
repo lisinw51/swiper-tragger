@@ -71,7 +71,14 @@ function touchEnd(e){
 			}
 		     _son.style.transform = "translate(0px,"+moveY+"px)";
 	        if(moveY==0||moveY==singleH){
-	            clearInterval(tick);	
+	            clearInterval(tick);
+	            var sub = setInterval(function(){
+	            	if(_parent.scrollTop>Difference){
+	            		_parent.scrollTop--;
+	            	}else{
+	            		clearInterval(sub);
+	            	}
+	            },clock)
 	        }
 		},clock)
 	}
