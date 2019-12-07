@@ -1,6 +1,6 @@
 var startY = 0;
 var moveY = 0;
-var endY = 0;
+
 var num = 1;
 //调整滑动速度，越大越慢
 var aJ = 100;
@@ -11,8 +11,7 @@ var Difference = 0;
 var _parent = [];
 var _son = [];
 var singleH = 0;
-//设置偏移量
-var pianyi = 0;
+
 
 function Elastic(dom,clocktime){
 	clock = clocktime;
